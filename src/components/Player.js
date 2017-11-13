@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Player extends Component{
     render(){
@@ -8,6 +9,8 @@ class Player extends Component{
     }
 }
 
-
+Player.propTypes = {
+    number: PropTypes.number
+}
 
 export default Player;
