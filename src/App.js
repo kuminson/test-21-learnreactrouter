@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import Main from './components/Main';
 
 class App extends Component {
   render() {
@@ -19,6 +21,9 @@ class App extends Component {
             <li><Link to="/roster">Roster</Link></li>
             <li><Link to="/roster/222">No.222 Player</Link></li>
         </ul>
+        <Provider>
+            <Main/>
+        </Provider>
       </div>
     );
   }
